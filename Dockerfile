@@ -41,6 +41,8 @@ ENV MAUTIC_VER="${MAUTIC_VER}" \
     # so the cache, settings and files any of them write stay writable by the \
     # others. \
     PHP_FPM_USER="wodby" \
+    # Mautic's settings file reads the database and address from the environment. \
+    PHP_FPM_CLEAR_ENV="no" \
     # Imports, exports and installation take longer than PHP's default limit. \
     PHP_MAX_EXECUTION_TIME="300" \
     PHP_UPLOAD_MAX_FILESIZE="64M" \
