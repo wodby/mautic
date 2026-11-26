@@ -1,6 +1,6 @@
 -include env_make
 
-MAUTIC_VER ?= 7.2.2
+MAUTIC_VER ?= 7.2.3
 MAUTIC_VER_MINOR := $(basename $(MAUTIC_VER))
 MAUTIC_VER_MAJOR := $(basename $(MAUTIC_VER_MINOR))
 
